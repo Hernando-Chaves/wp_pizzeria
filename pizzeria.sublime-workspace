@@ -1,0 +1,716 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"register_post",
+				"register_post_type\tRegister Post Type All Options"
+			],
+			[
+				"fi",
+				"filters"
+			],
+			[
+				"categor",
+				"category"
+			],
+			[
+				"ln",
+				"lenguaje"
+			],
+			[
+				"f",
+				"filter"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"len",
+				"lenguajes"
+			],
+			[
+				"aut",
+				"autofocus\tAttr"
+			],
+			[
+				"juego",
+				"juegos"
+			],
+			[
+				"no",
+				"nombre"
+			],
+			[
+				"bck",
+				"background-color"
+			],
+			[
+				"nombre",
+				"nombreReves"
+			],
+			[
+				"co",
+				"contenedor"
+			],
+			[
+				"SP",
+				"space-between"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"ma",
+				"marker-mid"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"h",
+				"height\tAttr"
+			],
+			[
+				"style",
+				"list-style-type"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"the_post",
+				"the_post_thumbnail"
+			],
+			[
+				"year",
+				"years_php"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"i",
+				"id\tAttr"
+			],
+			[
+				"ligh",
+				"lighten"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"register_sidebar",
+				"wp_register_sidebar_widget"
+			],
+			[
+				"register",
+				"register_event\tRegister Single Event"
+			],
+			[
+				"btn",
+				"btn-lista"
+			],
+			[
+				"btn-",
+				"btn-dos-2"
+			],
+			[
+				"sp",
+				"space-between"
+			],
+			[
+				"the_pos",
+				"the_post"
+			],
+			[
+				"WP_Q",
+				"WP_Query"
+			],
+			[
+				"con",
+				"consejos"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"pri",
+				"primary_color"
+			],
+			[
+				"has_pos",
+				"has_post_thumbnail"
+			],
+			[
+				"pr",
+				"primary_color"
+			],
+			[
+				"add_theme",
+				"add_theme_support"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"coi",
+				"comida"
+			],
+			[
+				"have",
+				"have_posts"
+			],
+			[
+				"termin",
+				"termino"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"is_a",
+				"is_admin"
+			],
+			[
+				"get_the_ter",
+				"get_the_term_list"
+			],
+			[
+				"d",
+				"data"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"add_f",
+				"add_filter"
+			],
+			[
+				"wp_enqueue",
+				"wp_enqueue_script"
+			],
+			[
+				"brow",
+				"browserSync"
+			],
+			[
+				"fo",
+				"font_title_header"
+			],
+			[
+				"add_",
+				"add_filter"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"wp_enqueue_s",
+				"wp_enqueue_style"
+			],
+			[
+				"bro",
+				"browserSync"
+			],
+			[
+				"br",
+				"browserSync"
+			],
+			[
+				"tr",
+				"transition"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"get_template_directory",
+				"get_template_directory_uri"
+			],
+			[
+				"broser",
+				"browserSync"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ena",
+		"selected_items":
+		[
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"f",
+				"Fetch: File"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: AppleScript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 432.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/inc/functions/general.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-8.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-7.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-22.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-2.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/woocommerce/cart/cart-v_1.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/woocommerce/cart/cart-totals.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-1.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/inc/admin/theme_options.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-6.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-5.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-3.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-16.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-15.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-14.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-13.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-11.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/page.php",
+		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-10.php",
+		"/C/xampp/htdocs/mango/wp-config.php",
+		"/C/xampp/htdocs/practica_vue/gulpfile.js",
+		"/C/xampp/htdocs/practica_vue/borrable.php",
+		"/C/xampp/htdocs/practica_vue/lista_ejercicios.php",
+		"/C/xampp/htdocs/practica_vue/head.php",
+		"/M/FINAL ORGANIZADO/WORDPRESS/wp/woocommerce/hooks y librerias/codigosUtiles.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/practica_tema_solo/functions.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/practica_tema_solo/footer.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/practica_tema_solo/header.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/practica_tema_solo/front-page.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/single.php",
+		"/C/Users/sirgothskull/Downloads/_5659fff2a3ee425630e15b315efd87c6.html",
+		"/G/wp/.htaccess",
+		"/C/xampp/htdocs/riesgo_cero/.htaccess",
+		"/C/xampp/htdocs/riesgo_cero/wp-content/themes/dt-the7/inc/admin/screens/the7-dashboard.php",
+		"/C/xampp/htdocs/riesgo_cero/wp-content/themes/dt-the7/style.css",
+		"/C/xampp/htdocs/curso_vue2/index.php",
+		"/C/xampp/htdocs/curso_vue2/head.php",
+		"/C/xampp/htdocs/curso_vue2/gulpfile.js",
+		"/C/xampp/htdocs/curso_vue2/lista_ejercicios.php",
+		"/C/xampp/htdocs/curso_vue2/scripts.php",
+		"/C/xampp/htdocs/curso_vue2/tmp.php",
+		"/C/xampp/htdocs/curso_vue2/js/jquery.js",
+		"/C/xampp/htdocs/practica_vue/tmp2.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/functions.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/page-blog.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/sidebar.php",
+		"/C/xampp/htdocs/prueba_cero/wp-content/themes/sin_starter/scss/pages/_about.scss",
+		"/C/xampp/htdocs/curso_jquery/buscar_en_dom.php",
+		"/C/xampp/htdocs/dentcol/wp-content/themes/revo-child-theme/functions.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/index.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/page-consejos.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/practica_tema_solo/sidebar.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/practica_tema_solo/index.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/page.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/js/custom.js",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/orden.php",
+		"/C/xampp/htdocs/tema_solo/wp-content/themes/soloOriginal/footer.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/js/app_orig.js",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/js/customJs.js",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/index_orig.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/js/tmp.js",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/index.php",
+		"/M/formateada 2017/htdocs/udemy_taxonomias/wp-content/themes/gourmet-artist/js/app.js",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/js/app.js",
+		"/M/formateada 2017/htdocs/udemy_taxonomias/wp-content/themes/gourmet-artist/functions_orig.php",
+		"/M/formateada 2017/htdocs/udemy_taxonomias/wp-content/plugins/certificasdos_crsas/js/myjs.js",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/scss/_custom.scss",
+		"/C/xampp/php/php.ini",
+		"/C/Users/sirgothskull/AppData/Roaming/Sublime Text 3/Packages/User/linea_array.sublime-snippet",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/template-parts/content-search.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/search.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/template-parts/content.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/header.php",
+		"/C/Users/sirgothskull/AppData/Roaming/Sublime Text 3/Packages/User/funcion_existe.sublime-snippet",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/functions.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/style.css",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/taxonomy-tipo-comida.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/index.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/template-parts/content-recetas.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/archive.php",
+		"/C/xampp/htdocs/udemy_taxo/wp-content/themes/gourmet-artist/single-recetas.php",
+		"/G/CICLO 4/vue js/practica_vue/base.html",
+		"/C/xampp/htdocs/flexbox/css/bootstrap.css",
+		"/C/xampp/htdocs/flexbox/css/estilo.css",
+		"/G/CICLO 4/flexbox/js/customjs.js",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/scss/_settings.scss",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/sidebar.php",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/header.php",
+		"/C/xampp/mysql/bin/my.ini",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/scss/app.scss",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/css/foundation-icons.css",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/css/app.css",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/package.json",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/inc/custom-header.php",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/gulpfile.js",
+		"/C/xampp/htdocs/test_temas/wp-content/themes/practica-underscore/js/app.js",
+		"/C/Users/sirgothskull/AppData/Roaming/Sublime Text 3/Packages/User/comentario.sublime-snippet",
+		"/C/xampp/htdocs/temas_jp/wp-content/themes/test_underscore/package.json",
+		"/C/xampp/htdocs/temas_jp/wp-content/themes/test_underscore/scss/app.scss",
+		"/C/xampp/htdocs/temas_jp/wp-content/themes/test_underscore/style.css",
+		"/C/xampp/htdocs/temas_jp/wp-content/themes/test_underscore/js/app.js",
+		"/C/xampp/htdocs/temas_jp/wp-content/themes/test_underscore/scss/_custom.scss",
+		"/C/xampp/htdocs/temas_jp/wp-content/themes/test_underscore/gulpfile.js",
+		"/C/xampp/htdocs/udemy_temas_jp/wp-config.php",
+		"/C/xampp/htdocs/udemy_temas_jp/under-test/package.json",
+		"/C/xampp/htdocs/multisitio/.htaccess",
+		"/C/xampp/htdocs/pugins/wp-blog-header.php",
+		"/C/Users/sirgothskull/Downloads/test.php"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\mango\\wp-content\\themes\\mango",
+			"C:\\xampp\\htdocs\\mango\\wp-content\\themes\\mango\\header",
+			"C:\\xampp\\htdocs\\mango\\wp-content\\themes\\mango",
+			"C:\\xampp\\htdocs\\riesgo_cero\\wp-content\\themes",
+			"C:\\xampp\\htdocs\\dental\\wp-content\\themes\\revo"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$",
+			"$labels",
+			"$plural",
+			"$singular",
+			"plural",
+			"singular",
+			"My Addresses",
+			"comment-date",
+			"posted",
+			"header-search-container",
+			"search",
+			"get_search_form()",
+			"get_search_form",
+			"class=\"header-search-container",
+			"header-search-container",
+			"type text and hit enter",
+			"type=\"search",
+			"input",
+			"placeholder",
+			"type text and",
+			"header-text",
+			"login",
+			"unit price",
+			"btn",
+			"continue shopping",
+			"Shipping and taxes are estimated",
+			"Enter Your Coupon Code If You Have One",
+			"login",
+			"_e(\"Logout",
+			"header-text",
+			"_(",
+			"header-text",
+			"logout",
+			"edit",
+			"Edit with Visual Composer",
+			"vc_load-inline-editor",
+			"edit-link",
+			"Edit",
+			"Edit<",
+			"post-edit-link",
+			"edit with",
+			"edit ",
+			"edit with",
+			"categorias",
+			"id",
+			"categoria_id",
+			"Vue js 2",
+			"categoria",
+			"td",
+			"t-body",
+			"t-head",
+			"_e(",
+			"e_(",
+			"v-show=\"name\"",
+			"antiguedad",
+			"normalize",
+			"\t\t\n",
+			"></",
+			"h3",
+			"h2",
+			"!important",
+			"class=\"text-sm-center",
+			"input_",
+			"memoy",
+			"max_input",
+			"Max Input Vars",
+			"WordPress Memory Limit",
+			"<div id=\"the7-dashboard\"",
+			"<div class=\"notice\"",
+			"años",
+			"v-bind",
+			"http://localhost/practica_vue/",
+			"name",
+			"\t\t\t\t\n",
+			"post-guia",
+			"primary",
+			".work {        ",
+			".work {\n        .iconbox-circle {",
+			"btn",
+			"BTN",
+			"vc_wp_custommenu wpb_content_element",
+			"mega-left-title",
+			"<strong>All Departments</strong>",
+			"\">\n",
+			"\t\t\t\t\t\t\t\t\t\t\t\n",
+			"h1",
+			"bootstrap4",
+			"h3",
+			"\n\t",
+			"filtr",
+			"show_tipo_comida",
+			"max_execution_time ",
+			"post_max_size ",
+			"h2",
+			"\n  \t\t",
+			"mostrar_post_type",
+			"$query->",
+			"data",
+			"h3",
+			"saludo",
+			"350px",
+			"blue",
+			"https://fonts.googleapis.com/css?family=Patua+One|Pinyon+Script",
+			"4. Base Typography",
+			" 4. Base Typography",
+			"execution",
+			"11. Button",
+			"Button",
+			"Base Typography",
+			"primary-color",
+			"primary",
+			"background",
+			"color",
+			"my-app"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "pizzeria.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"funct",
+				"gourmet-artist\\functions.php"
+			],
+			[
+				"inde",
+				"gourmet-artist\\index.php"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"sideba",
+				"sidebar.php"
+			],
+			[
+				"settings",
+				"scss\\_settings.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
