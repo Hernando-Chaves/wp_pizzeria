@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"register_nav",
+				"register_nav_menus"
+			],
+			[
+				"wphed",
+				"wp_head"
+			],
+			[
+				"body",
+				"body_class"
+			],
+			[
 				"register_post",
 				"register_post_type\tRegister Post Type All Options"
 			],
@@ -275,6 +287,42 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 42,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "scss/custom.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 2014,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 1869,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -337,10 +385,21 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original"
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/img",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/scss"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/sidebar.php",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/single.php",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/page.php",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/footer.php",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/front-page.php",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/functions.php",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/scss/custom.scss",
+		"/C/xampp/htdocs/udemy_pizzeria/wp-content/themes/pizzeria_original/header.php",
+		"/G/CICLO 4/git avanzado/instrucciones.html",
 		"/C/xampp/htdocs/mango/wp-content/themes/mango/inc/functions/general.php",
 		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-8.php",
 		"/C/xampp/htdocs/mango/wp-content/themes/mango/header/header-7.php",
@@ -602,8 +661,123 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 42,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								42,
+								42
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "scss/custom.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2014,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1293,
+								1293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 452.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "functions.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1869,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1343,
+								1343
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 528.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -707,7 +881,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 201.0,
 	"status_bar_visible": true,
 	"template_settings":

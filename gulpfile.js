@@ -3,8 +3,13 @@ var $    = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
+
+var estilos = [
+  'scss/*.scss',
+  './style.scss'
+];
  gulp.task('sass', function() {
-  return gulp.src('scss/*.scss')
+  return gulp.src(estilos)
     .pipe($.sass({
       outputStyle: 'nested' // if css compressed **file size**
     })

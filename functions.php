@@ -23,7 +23,7 @@ AGREGANDO SCRIPTS
 
 			wp_enqueue_style( 'fontawesome', get_template_directory_uri().'/css/font-awesome.min.css');
 			wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Raleway:700');
-			wp_enqueue_style('custom_css',get_template_directory_uri().'/css/custom.css');
+			wp_enqueue_style( 'custom_css',get_template_directory_uri().'/css/custom.css');
 
 			wp_enqueue_script( 'custom_js', get_template_directory_uri().'/js/custom.js', array('jquery'), '1.0.0', true );
 
@@ -37,11 +37,10 @@ AGREGANDO SCRIPTS
 **************************************************************************
 */ 
    
-   		register_nav_menus(array(
-            'primary'     => 'Menu Principal',
-   			'secondary'   => 'Menu Principal',
-   			'pie_social'  => 'Redes Sociales',
-   		));
+   		register_nav_menus([
+   			'principal'   => 'Menu Principal',
+   			'social'      => 'Redes Sociales',
+   		] );
 /*
 **************************************************************************
    THEME SUPPORT
