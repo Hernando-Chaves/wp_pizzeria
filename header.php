@@ -54,30 +54,37 @@
 
 		</header>
 
-		<nav class="menu-sitio"  >
-			<div class="contenedor navegacion">
-				
-				<?php 
-					wp_nav_menu([
-						'theme_location'    => 'principal',
-						'container'         => 'nav',
-						'container_id'      => 'container_id',
-						'container_class'   => 'container_class',
-						'menu_class'        => 'class_menu',
-						'menu_id'           => 'id_menu',
-						'link_before'       => '<span class="sr-text">',
-						'link_after'        => '</span>',
-						'fallback_cb'       => '',
-						'depth'             => 1,
-						'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-
-					]);
-					   
-					  
-				?>
-
+		<div class="menu_principal">
+			<div class="menu_responsive">
+				<a href="">
+					<i class="fa fa-bars" aria-hidden="true"></i> Menu
+				</a>
 			</div>
-		</nav>
+			<nav class="menu-sitio"  >
+				<div class="contenedor navegacion">
+					
+					<?php 
+						wp_nav_menu([
+							'theme_location'    => 'principal',
+							'container'         => 'div',
+							'container_id'      => 'container_id',
+							'container_class'   => 'container_class',
+							'menu_class'        => 'class_menu',
+							'menu_id'           => 'id_menu',
+							'link_before'       => '<span class="sr-text">',
+							'link_after'        => '</span>',
+							'fallback_cb'       => '',
+							'depth'             => 1,
+							'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+			
+						]);
+						   
+						  
+					?>
+			
+				</div>
+			</nav>
+		</div>
 		
 	</body>
 </html>
