@@ -1,0 +1,46 @@
+
+				   body.login{
+				   		background-image: url(<?php echo $bg ?>)!important;
+				   		margin-top: 120px!important;
+				   	}
+				   body.login div#login {
+				   		background-color: rgba(0,0,0,.6);
+				   }
+				   body.login div#login h1 {}
+				   body.login div#login h1 a {
+				   		background-image:url(<?php echo $image ?>) !important;
+				   		width: 100%;;
+				   }
+				   body.login div#login form#loginform {
+				   		background-color: rgba(0,0,0,.5);
+				   }
+				   body.login div#login form#loginform p {}
+				   body.login div#login form#loginform p label {}
+				   body.login div#login form#loginform input {}
+				   body.login div#login form#loginform input#user_login {}
+				   body.login div#login form#loginform input#user_pass {}
+				   body.login div#login form#loginform p.forgetmenot {}
+				   body.login div#login form#loginform p.forgetmenot input#rememberme {}
+				   body.login div#login form#loginform p.submit {}
+				   body.login div#login form#loginform p.submit input#wp-submit {}
+				   body.login div#login p.message {}
+				   body.login div#login p#nav {}
+				   body.login div#login p#nav a {}
+				   body.login div#login p#backtoblog {}
+				   body.login div#login p#backtoblog a {}
+				   /*MEDIA QUERIES*/
+				   @media only screen and (min-width: 768px) {
+
+				   		body.login div#login {
+				   			width: 700px;
+				   			margin: 100px auto;
+				   			position: absolute;
+				   			top: 0;left: 0;right: 0;bottom: 0;
+				   			height: 330px;
+				   		}
+
+				   		body.login div#login form#loginform {
+				   			background-color: rgba(0,0,0,.6);
+				   		}
+				   }
+	   

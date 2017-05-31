@@ -1,10 +1,9 @@
-<aside class="columns1-3 sidebar">
-<?php 
+	<aside class="columnas1-3">
+		
+		<?php if(is_active_sidebar('blog_sidebar')): ?>
 
-	if(is_active_sidebar( 'blog_sidebar' ))
-	{ 
-		dynamic_sidebar('blog_sidebar');
-	}
+			<?php dynamic_sidebar('blog_sidebar') ?>
 
-?>
-</aside>
+		<?php endif ?>
+
+	</aside>

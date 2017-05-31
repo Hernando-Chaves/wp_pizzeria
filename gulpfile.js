@@ -29,7 +29,7 @@ gulp.task('browser-sync',function(){
     './style.css'
   ];
   browserSync.init(archivos,{
-    proxy : 'http://localhost/udemy_pizzeria/',
+    proxy : 'http://localhost/nueva_pizzeria/',
     notify : false
   })
 });

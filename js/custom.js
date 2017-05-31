@@ -1,37 +1,33 @@
 jQuery(function($){
-
-	$('.menu_responsive').on('click',function(){
-		$('.menu-sitio').toggle('slow');
+	// MOSTRAR OCULTAR MENU
+	jQuery('.menu-responsive').on('click',function(){
+		jQuery('#id_menu').slideToggle(600);
 		return false;
 	});
 
-	// CAJAS CONTENIDO  - NOSOTROS
-	$(window).resize(function(){
-		ajustarCajas();
-	});
-
-
-	function ajustarCajas() 
-	{
-		var imgs = $('.imagen-caja');
-
-		if(imgs > 0)
+	// REACCIONAR A REDIMENSIONAR LA PANTALLA
+	var breakpoint = 768;
+	jQuery(window).resize(function(){
+		ajustarCaja();
+		
+		if(jQuery(document).width()>= breakpoint)
 		{
-			var cajas  = $('.contenido-caja');
-			var altura = imgs[0].height;
-
-			$(cajas).each(function(i,elemento){
-				$(elemento).css({'height' : altura+'px'});
+			jQuery('#id_menu').css('display','flex');
+		} else {
+			jQuery('#id_menu').hide();
+		}
+	});
+	// AJUSTAR TAMAÑO DE LAS CAJAS
+	function ajustarCaja()
+	{
+		var img = jQuery('.img-caja');
+		if(img.length > 0)
+		{
+			var altura = img[0].height;
+			var caja   = jQuery('.info-caja');
+			jQuery(caja).each(function(i, elemento){
+				jQuery(elemento).css({'height':altura+'px'});
 			});
 		}
-	}
-
-	// FLUIDBOX
-	jQuery('.gallery a').each(function(){
-		jQuery(this).attr({'data-fluidbox' : ''});
-	});
-	if(jQuery('[data-fluidbox]').length > 0)
-	{
-		jQuery('[data-fluidbox]').fluidbox();
 	}
 }); 
