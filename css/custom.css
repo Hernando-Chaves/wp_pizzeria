@@ -51,6 +51,9 @@ img {
   display: block;
   clear: both; }
 
+.sr-text, .screen-reader-text {
+  display: none; }
+
 .texto-rojo {
   color: #a61206; }
 
@@ -67,8 +70,6 @@ header.encbezado-sitio {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-    header.encbezado-sitio #menu_redes .sr-text {
-      display: none; }
     header.encbezado-sitio #menu_redes a {
       text-decoration: none;
       font-family: 'FontAwesome';
@@ -334,3 +335,32 @@ article .entrada-blog {
     article .entrada-blog .titulo-entrada .autor {
       text-transform: uppercase;
       margin-top: -22px; }
+
+aside #searchform {
+  position: relative; }
+  aside #searchform #searchsubmit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: #a61206;
+    text-indent: -9999px;
+    width: 42px;
+    height: 42px;
+    background-image: url("../img/buscador.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer; }
+  aside #searchform input {
+    height: 42px;
+    width: 100%; }
+  aside #searchform h3 {
+    font-weight: 700; }
+
+aside ul {
+  list-style: none; }
+  aside ul a {
+    text-decoration: none;
+    color: #5b5b5b; }
+    aside ul a:hover {
+      color: #f19f30; }

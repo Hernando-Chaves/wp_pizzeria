@@ -1,3 +1,4 @@
+// @import 'curso_sass';
 $principal:#08783F;
 $gris : #c1c1c1;
 $blanco: #ffffff;
@@ -56,9 +57,13 @@ img {
 	display: block;
 	clear: both;
 }
+.sr-text,.screen-reader-text {
+	display: none;
+}
 .texto-rojo {
 	color: $rojo;
 }
+
 
 // HEADER
 header.encbezado-sitio {
@@ -75,9 +80,7 @@ header.encbezado-sitio {
 		padding: 0;
 		display: flex;
 		justify-content: center;
-		.sr-text {
-			display: none;
-		}
+		
 		a {
 			text-decoration: none;
 			font-family: 'FontAwesome';
@@ -403,4 +406,40 @@ article {
 		}
 
 	}
+}
+// ASIDE
+aside {
+	#searchform {
+		position: relative;
+		#searchsubmit {
+			position: absolute;
+			top: 0;right: 0;
+			border: none;
+			background-color: $rojo;
+			text-indent: -9999px;
+			width: 42px;
+			height: 42px;
+			background-image: url("../img/buscador.png");
+			background-repeat: no-repeat;
+			background-position: center center;
+			cursor: pointer;
+		}
+		input {
+			height: 42px;
+			width: 100%;
+		}
+		h3 {
+			font-weight: 700;
+		}
+	}
+		ul{
+			list-style: none;
+			a {
+				text-decoration: none;
+				color: darken($gris,40);
+				&:hover {
+					color: $naranja;
+				}
+			}
+		}
 }

@@ -1,0 +1,43 @@
+// funciones de color
+
+// FUNCIONES RGB
+// red();  blue();  blue();  rgb();  rgba();
+
+// FUNCIONES HSL
+// hue(); adjust-hue(); 
+// saturation();  saturate();  desaturate();
+// lightness();  lighten();  darken();
+
+// COLORES COMPLEMENTARIOS E INVERSOS
+// invert();  opuesto en RGB = restar el valor maximo de cada canal el valor actual
+// complement(); opuesto  hsl = opuesto en 180deg en hue
+
+// $base: hsl(60,50,20);
+// $base1: rgb(200,125,125);
+// $color : invert($base);
+// $value: lightness($color);
+// body {
+// 	background-color: $color ;
+// 	&:before {
+// 		content: '#{$value}';
+// 		font-size: 3rem;
+// 		text-align: center;
+// 		display: block;
+// 		color: invert($color);
+// 	}
+// }
+@function espectro($direction)
+{
+	$color:'linear-gradient(#{$direction}';
+
+	@for $i from 1 through 360 {
+		$actual : hsl($i,100,50);
+		$color  : '#{$color}','#{$actual}';
+	}
+	$color: unquote('#{$color})');
+	@return $color;
+}
+
+body {
+	background: espectro(to bottom);
+}
