@@ -69,8 +69,6 @@
 					'container_class'   => 'container_class',
 					'menu_class'        => 'class_menu',
 					'menu_id'           => 'id_menu',
-					'link_before'       => '<span class="sr-text">',
-					'link_after'        => '</span>',
 					'fallback_cb'       => '',
 					'depth'             => 1,
 					'items_wrap'        => '<ul id="%1$s" class="%2$s">%3$s</ul>',

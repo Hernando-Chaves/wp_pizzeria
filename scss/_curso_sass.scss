@@ -26,18 +26,29 @@
 // 		color: invert($color);
 // 	}
 // }
-@function espectro($direction)
-{
-	$color:'linear-gradient(#{$direction}';
+// @function espectro($direction)
+// {
+// 	$color:'linear-gradient(#{$direction}';
 
-	@for $i from 1 through 360 {
-		$actual : hsl($i,100,50);
-		$color  : '#{$color}','#{$actual}';
+// 	@for $i from 1 through 360 {
+// 		$actual : hsl($i,100,50);
+// 		$color  : '#{$color}','#{$actual}';
+// 	}
+// 	$color: unquote('#{$color})');
+// 	@return $color;
+// }
+@function colores($direccion)
+{
+	$text : 'linear-gradient(#{$direccion}';
+	@for $i from 1 through 360 
+	{
+		$color : hsl($i,100,50);
+		$text: '#{$text}','#{$color}';
 	}
-	$color: unquote('#{$color})');
-	@return $color;
+	$final: unquote('#{$text})');
+	@return $final
 }
 
 body {
-	background: espectro(to bottom);
+	background: colores(to right);
 }
