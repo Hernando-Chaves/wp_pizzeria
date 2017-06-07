@@ -1,4 +1,4 @@
-// @import 'curso_sass';
+/*@import 'curso_sass'; */
 $principal:#08783F;
 $gris : #c1c1c1;
 $blanco: #ffffff;
@@ -7,7 +7,7 @@ $naranja: #f19f30;
 $rojo : #a61206;
 $negro: #000000;
 
-// GENERALES
+/*GENERALES */
 
 html {
 	box-sizing: border-box;
@@ -35,6 +35,7 @@ img {
 	padding: 0.4rem 3rem;
 	transition: all 0.6s ease;
 	border-radius: 3px;
+	border: none;
 	&:hover {
 		letter-spacing: 1px;
 		background-color: $naranja;
@@ -65,7 +66,7 @@ img {
 }
 
 
-// HEADER
+/*HEADER */
 header.encbezado-sitio {
 	border-bottom: 1px solid $gris;
 	
@@ -105,7 +106,7 @@ header.encbezado-sitio {
 		display: none;
 	}
 
-	// MEDIA 450PX
+	/*MEDIA 450PX */
 	@media only screen and(min-width:450px) {
 		.logo {
 			text-align: center;
@@ -122,7 +123,7 @@ header.encbezado-sitio {
 		
 	}
 
-	// MEDIA 768PX
+	/*MEDIA 768PX */
 	@media only screen and (min-width:768px) {
 		.logo {
 			img {
@@ -144,7 +145,7 @@ header.encbezado-sitio {
 	}
 }
 
-// MENU PRINCIPAL
+/*MENU PRINCIPAL */
 #menu-principal {
 	.menu-responsive {
 		text-align: center;
@@ -196,7 +197,7 @@ header.encbezado-sitio {
 	}
 
 }
-// MENU PIE
+/*MENU PIE */
 footer {
 	border-top: 1px solid $gris;
 	padding: 2rem;
@@ -248,7 +249,7 @@ footer {
 
 
 
-// TEMPLATES CONTENIDO
+/*TEMPLATES CONTENIDO */
 .hero {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -289,7 +290,7 @@ footer {
 	}
 }
 
-// NOSOTROS
+/*NOSOTROS */
 .main-cajas {
 	img {
 		width: 100%;
@@ -327,7 +328,7 @@ footer {
 		}
 	}
 }
-// ESPECIALIDADES
+/*ESPECIALIDADES */
 .especialidades {
 	padding: 0 60px;
 	.texto-especialidad {
@@ -348,7 +349,7 @@ footer {
 	}
 }
 
-// GRID
+/*GRID */
 @media only screen and(min-width:768px) {
 	.contenedor-grid {
 		margin-left: -10px;
@@ -370,7 +371,7 @@ footer {
 	.columnas2-3 {width: 66.6%; }
 
 }
-// BLOG
+/*BLOG */
 article {
 	img {
 		margin-top: 30px;
@@ -407,7 +408,7 @@ article {
 
 	}
 }
-// COMENTARIOS DEL BLOG
+/*COMENTARIOS DEL BLOG */
 .lista-comentarios {
 	width: 60%;
 	margin: 0 auto;
@@ -433,7 +434,7 @@ article {
 	}
 }
 
-// ASIDE
+/*ASIDE */
 aside {
 	#searchform {
 		position: relative;
@@ -469,7 +470,7 @@ aside {
 			}
 		}
 }
-// COMENTARIOS
+/*COMENTARIOS */
  .comentario {
  	h3 {
  		text-align: center;
@@ -514,3 +515,72 @@ aside {
 		margin: 0 auto;
  	}
  } 
+/*PAGINACION */
+.paginacion {
+	margin-top: 1.5rem;
+	text-align: center;
+	background-color: lighten($gris,10);
+	padding: .5rem;
+	border-radius: 4px;
+	display: flex;
+	justify-content:space-around;
+	a {
+		text-decoration: none;
+		color: $rojo;
+	}
+	.current {
+		color: desaturate($rojo,40); 
+		opacity: 0.6;
+	}
+}
+/*GALERIA */
+#gallery-1 dl.gallery-item{
+	width: 100%!important;
+	img {
+		border: none;
+	}
+	@media only screen and(min-width:620px) {
+			width: 50%!important;
+
+	}
+	@media only screen and(min-width:768px) {
+			width: 25%!important;
+	}
+}
+
+/* CONTACTANOS*/
+.contacto {
+	padding: 2rem;
+	background-image: url("../img/contacto_bg.jpg");
+	background-repeat: no-repeat;
+	background-position: top left ;
+	form.reserva-contacto {
+
+		.campo {
+
+			input, textarea {
+				margin-bottom: 0.6rem;
+				height: 2rem;
+				width: 100%;
+				padding: 1rem;
+				text-align: center;
+			}
+			input::placeholder {
+				color: darken($gris,50);
+			}
+			textarea {
+				height: 6rem;
+			}
+		}
+
+		.button {
+			width: 100%;
+		}
+
+	}
+	@media only screen and (min-width:768px) {
+		form.reserva-contacto {
+			margin-left: 60%;
+		}
+	}
+}

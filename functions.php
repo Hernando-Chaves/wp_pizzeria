@@ -1,4 +1,7 @@
 <?php
+// require get_template_directory().'/inc/test.php';
+require get_template_directory().'/inc/database.php';
+require get_template_directory().'/inc/reservaciones.php';
 /*
  **************************************************************************
     REGISTRAR CUSTOM POST TYPE
@@ -20,9 +23,9 @@
             'singular_name'         => _x( $singular, 'Post Type Singular Name', $text_domain ),
             'menu_name'             => __( $plural, $text_domain ),
             'name_admin_bar'        => __( $plural, $text_domain ),
-            'parent_item_colon'     => __( $sigular.' Padre:', $text_domain ),
+            'parent_item_colon'     => __( $singular.' Padre:', $text_domain ),
             'all_items'             => __( 'Todas las '.$plural, $text_domain ),
-            'add_new_item'          => __( 'Agregar Nueva '.$sngular, $text_domain ),
+            'add_new_item'          => __( 'Agregar Nueva '.$singular, $text_domain ),
             'add_new'               => __( 'Agregar Nueva '.$singular, $text_domain ),
             'new_item'              => __( 'Nueva '.$singular, $text_domain ),
             'edit_item'             => __( 'Editar '.$singular, $text_domain ),

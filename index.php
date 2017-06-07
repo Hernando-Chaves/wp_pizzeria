@@ -61,7 +61,15 @@
 						
 
 							<?php endwhile ?>
-
+							<div class="paginacion">
+								<?php //echo paginate_links() ?><!-- metodo 1 de paginacion -->
+								<div class="next">
+									<?php next_posts_link('Anteriores') ?>
+								</div>
+								<div class="previous">
+									<?php previous_posts_link('Siguientes') ?>
+								</div>
+							</div>
 						<?php endif ?>
 						
 					</main>

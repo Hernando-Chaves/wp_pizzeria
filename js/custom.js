@@ -17,6 +17,7 @@ jQuery(function($){
 			jQuery('#id_menu').hide();
 		}
 	});
+
 	// AJUSTAR TAMAÑO DE LAS CAJAS
 	function ajustarCaja()
 	{
@@ -30,4 +31,14 @@ jQuery(function($){
 			});
 		}
 	}
+
+	// GALERIA
+	jQuery('.gallery a').each(function(){
+		jQuery(this).attr({'data-fluidbox' : ''});
+	});
+	if(jQuery('[data-fluidbox]').length > 0)
+	{
+		jQuery('[data-fluidbox]').fluidbox();
+	}
+
 }); 

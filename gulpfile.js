@@ -26,6 +26,7 @@ gulp.task('browser-sync',function(){
     './scss/*.scss',
     './js/*.js',
     './*.php',
+    './inc/*.php',
     './style.css'
   ];
   browserSync.init(archivos,{

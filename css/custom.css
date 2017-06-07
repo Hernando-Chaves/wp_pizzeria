@@ -1,3 +1,5 @@
+/*@import 'curso_sass'; */
+/*GENERALES */
 html {
   box-sizing: border-box; }
 
@@ -30,7 +32,8 @@ img {
   text-decoration: none;
   padding: 0.4rem 3rem;
   transition: all 0.6s ease;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: none; }
   .button:hover, .comentario form #submit:hover {
     letter-spacing: 1px;
     background-color: #f19f30; }
@@ -57,8 +60,11 @@ img {
 .texto-rojo {
   color: #a61206; }
 
+/*HEADER */
 header.encbezado-sitio {
-  border-bottom: 1px solid #c1c1c1; }
+  border-bottom: 1px solid #c1c1c1;
+  /*MEDIA 450PX */
+  /*MEDIA 768PX */ }
   header.encbezado-sitio .logo {
     text-align: center; }
     header.encbezado-sitio .logo img {
@@ -115,6 +121,7 @@ header.encbezado-sitio {
       right: 0;
       text-align: right; } }
 
+/*MENU PRINCIPAL */
 #menu-principal .menu-responsive {
   text-align: center; }
   #menu-principal .menu-responsive a {
@@ -156,6 +163,7 @@ header.encbezado-sitio {
     -ms-flex-pack: distribute;
         justify-content: space-around; } }
 
+/*MENU PIE */
 footer {
   border-top: 1px solid #c1c1c1;
   padding: 2rem;
@@ -199,6 +207,7 @@ footer {
     font-size: 0.5rem;
     text-transform: uppercase; } }
 
+/*TEMPLATES CONTENIDO */
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
@@ -235,6 +244,7 @@ footer {
   .principal {
     margin-top: -60px; } }
 
+/*NOSOTROS */
 .main-cajas img {
   width: 100%;
   margin-bottom: -5px; }
@@ -270,6 +280,7 @@ footer {
     .main-cajas > div .info-caja {
       padding: 3rem; } }
 
+/*ESPECIALIDADES */
 .especialidades {
   padding: 0 60px; }
   .especialidades .texto-especialidad h4 {
@@ -284,6 +295,7 @@ footer {
   .especialidades .texto-especialidad p {
     color: #424242; }
 
+/*GRID */
 @media only screen and (min-width: 768px) {
   .contenedor-grid {
     margin-left: -10px;
@@ -306,6 +318,7 @@ footer {
   .columnas2-3 {
     width: 66.6%; } }
 
+/*BLOG */
 article img {
   margin-top: 30px; }
 
@@ -336,6 +349,7 @@ article .entrada-blog {
       text-transform: uppercase;
       margin-top: -22px; }
 
+/*COMENTARIOS DEL BLOG */
 .lista-comentarios {
   width: 60%;
   margin: 0 auto; }
@@ -355,6 +369,7 @@ article .entrada-blog {
     background-color: #ffffff;
     margin-top: 1rem; }
 
+/*ASIDE */
 aside #searchform {
   position: relative; }
   aside #searchform #searchsubmit {
@@ -384,6 +399,7 @@ aside ul {
     aside ul a:hover {
       color: #f19f30; }
 
+/*COMENTARIOS */
 .comentario h3 {
   text-align: center;
   font-weight: 700; }
@@ -421,3 +437,61 @@ aside ul {
   .comentario {
     width: 50%;
     margin: 0 auto; } }
+
+/*PAGINACION */
+.paginacion {
+  margin-top: 1.5rem;
+  text-align: center;
+  background-color: #dbdbdb;
+  padding: .5rem;
+  border-radius: 4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .paginacion a {
+    text-decoration: none;
+    color: #a61206; }
+  .paginacion .current {
+    color: #842f28;
+    opacity: 0.6; }
+
+/*GALERIA */
+#gallery-1 dl.gallery-item {
+  width: 100% !important; }
+  #gallery-1 dl.gallery-item img {
+    border: none; }
+  @media only screen and (min-width: 620px) {
+    #gallery-1 dl.gallery-item {
+      width: 50% !important; } }
+  @media only screen and (min-width: 768px) {
+    #gallery-1 dl.gallery-item {
+      width: 25% !important; } }
+
+/* CONTACTANOS*/
+.contacto {
+  padding: 2rem;
+  background-image: url("../img/contacto_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top left; }
+  .contacto form.reserva-contacto .campo input, .contacto form.reserva-contacto .campo textarea {
+    margin-bottom: 0.6rem;
+    height: 2rem;
+    width: 100%;
+    padding: 1rem;
+    text-align: center; }
+  .contacto form.reserva-contacto .campo input::-webkit-input-placeholder {
+    color: #424242; }
+  .contacto form.reserva-contacto .campo input::-moz-placeholder {
+    color: #424242; }
+  .contacto form.reserva-contacto .campo input:-ms-input-placeholder {
+    color: #424242; }
+  .contacto form.reserva-contacto .campo input::placeholder {
+    color: #424242; }
+  .contacto form.reserva-contacto .campo textarea {
+    height: 6rem; }
+  .contacto form.reserva-contacto .button, .contacto .comentario form.reserva-contacto #submit, .comentario .contacto form.reserva-contacto #submit {
+    width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .contacto form.reserva-contacto {
+      margin-left: 60%; } }
