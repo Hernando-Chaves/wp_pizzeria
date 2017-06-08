@@ -37,7 +37,7 @@
 									</div>
 								
 									<div class="campo" >
-										<input type="tel" name="telefono" placeholder="Ingresa tu telefono" required="">
+										<input type="tel" name="telefono" placeholder="Ingresa tu telefono" required maxlength="12">
 									</div>
 								
 									<div class="campo" >

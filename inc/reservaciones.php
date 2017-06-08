@@ -5,9 +5,9 @@
 	
 		function pizzeria_guardar_reservaciones()
 		{
+			global $wpdb;
 	       
 			if(isset($_POST['enviar']) && $_POST['oculto'] == '1'):
-				global $wpdb;
 
 				$nombre   = sanitize_text_field($_POST['nombre']);
 				$fecha    = sanitize_text_field($_POST['fecha']);
@@ -15,26 +15,21 @@
 				$telefono = sanitize_text_field($_POST['telefono']);
 				$mensaje  = sanitize_text_field($_POST['mensaje']);
 
-				$tabla = $wpdb->prefix . 'reservaciones';
-				echo $nombre.' - '.$fecha.' - '.$correo.' - '.$telefono.' - '.$mensaje.' - '.$tabla;
-
-				$datos = array(
+				$tabla = $wpdb->prefix.'reservaciones';
+			
+				$datos = [
 				    'nombre'   =>  $nombre,
 				    'fecha'    =>  $fecha,
 				    'correo'   =>  $correo,
 				    'telefono' =>  $telefono,
 				    'mensaje'  =>  $mensaje
-				);
+				];
 
-				$formato = array(
-					'%s',
-					'%s',
-					'%s',
-					'%s',
-					'%s'
-				);
+				$formato = ['%s','%s','%s','%s','%s'];
+				
 
 				$wpdb->insert($tabla, $datos, $formato);
+				// $wpdb->print_error();
 
 				$url = get_page_by_title('Bienvenida');
 				wp_redirect(get_permalink($url->ID));

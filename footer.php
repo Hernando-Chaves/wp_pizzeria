@@ -12,7 +12,7 @@
 			]);
 		?>
 		<div class="ubicacion_pie">
-			<p>Diagonal 52b 53a 19 Bogotá - Colombia</p>
+			<p><?php echo esc_html(get_option('pizzeria_direccion')) ?> - <?php echo esc_html(get_option('pizzeria_telefono')) ?></p>
 		</div>
 	</footer>	
 	<div class="copyright">

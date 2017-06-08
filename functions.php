@@ -2,6 +2,7 @@
 // require get_template_directory().'/inc/test.php';
 require get_template_directory().'/inc/database.php';
 require get_template_directory().'/inc/reservaciones.php';
+require get_template_directory().'/inc/opciones.php';
 /*
  **************************************************************************
     REGISTRAR CUSTOM POST TYPE
