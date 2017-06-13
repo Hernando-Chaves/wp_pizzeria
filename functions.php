@@ -93,13 +93,47 @@ AGREGANDO SCRIPTS
 			wp_enqueue_style( 'google_fonts', 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900');
 			wp_enqueue_style( 'custom_css',get_template_directory_uri().'/css/custom.css');
 
-			wp_enqueue_script( 'custom_js', get_template_directory_uri().'/js/custom.js', array('jquery'), '1.0.0', true );
+         $apiKey = esc_html(get_option('pizzeria_apikey'));
+         wp_enqueue_script( 'custom_js', get_template_directory_uri().'/js/custom.js', array('jquery'), '1.0.0', true );
+			wp_enqueue_script( 'google_maps', 'https://maps.googleapis.com/maps/api/js?key='.$apiKey.'&callback=initMap', [], '', true );
 			wp_enqueue_script( 'fluidbox_js',get_template_directory_uri().'/js/jquery.fluidbox.min.js',['jquery'],'1.0',true);
+
+         // PASAR VARIABLES DE PHP A JS
+         wp_localize_script(
+            'custom_js',
+            'opciones',
+            [
+               'latitud'  =>  get_option( 'pizzeria_longitud' ),
+               'longitud' =>  get_option('pizzeria_latitud'),
+               'zoom'     =>  get_option('pizzeria_zoom'),
+            ]);
 
 		}
 	
 	}
 	add_action('wp_enqueue_scripts','boots3_adding_scripts' );
+/*
+**************************************************************************
+   AGREGAR DEFER ASYNC A MAPA
+**************************************************************************
+*/
+   if(! function_exists('pizzeria_add_async'))
+   {
+   
+      function pizzeria_add_async($tag,$handle)
+      {
+          
+         if('google_maps' !== $handle)
+         {
+            return $tag;
+         } else {
+            return str_replace('src', 'async="async" defer="defer" src', $tag);
+         }
+   
+      }
+   
+   }
+   add_filter('script_loader_tag','pizzeria_add_async',10,2);
 /*
 **************************************************************************
    REGISTRO DE MENUS
@@ -148,6 +182,7 @@ AGREGANDO SCRIPTS
    // add_image_size('nosotros', 350, 220,true);
    add_image_size('nosotros', 437, 291,true);
    add_image_size('especialidad', 768, 515,true);
+   add_image_size('especialidad_front', 435, 526,true);
 
    update_option( 'thumbnail_size_w', 253 );
    update_option( 'thumbnail_size_h', 164);
@@ -177,3 +212,175 @@ AGREGANDO SCRIPTS
    
    }
    add_action('widgets_init','pizzeria_add_widget');
+// AGREGAR ACF
+   include_once('advanced-custom-fields/acf.php');
+   define( 'ACF_LITE', true );
+
+   if(function_exists("register_field_group"))
+   {
+      register_field_group(array (
+         'id' => 'acf_especialidades',
+         'title' => 'especialidades',
+         'fields' => array (
+            array (
+               'key' => 'field_592d54ffbba92',
+               'label' => 'Precio',
+               'name' => 'precio',
+               'type' => 'text',
+               'instructions' => 'Añadir precio',
+               'required' => 1,
+               'default_value' => '',
+               'placeholder' => '',
+               'prepend' => '',
+               'append' => '',
+               'formatting' => 'html',
+               'maxlength' => '',
+            ),
+         ),
+         'location' => array (
+            array (
+               array (
+                  'param' => 'post_type',
+                  'operator' => '==',
+                  'value' => 'pizza',
+                  'order_no' => 0,
+                  'group_no' => 0,
+               ),
+            ),
+         ),
+         'options' => array (
+            'position' => 'normal',
+            'layout' => 'default',
+            'hide_on_screen' => array (
+            ),
+         ),
+         'menu_order' => 0,
+      ));
+      register_field_group(array (
+         'id' => 'acf_inicio',
+         'title' => 'Inicio',
+         'fields' => array (
+            array (
+               'key' => 'field_593fdbc711310',
+               'label' => 'Contenido',
+               'name' => 'contenido',
+               'type' => 'wysiwyg',
+               'default_value' => '',
+               'toolbar' => 'full',
+               'media_upload' => 'yes',
+            ),
+            array (
+               'key' => 'field_593fdbe011311',
+               'label' => 'Imagen',
+               'name' => 'imagen',
+               'type' => 'image',
+               'instructions' => 'Sube una Imagen',
+               'save_format' => 'url',
+               'preview_size' => 'thumbnail',
+               'library' => 'all',
+            ),
+         ),
+         'location' => array (
+            array (
+               array (
+                  'param' => 'page',
+                  'operator' => '==',
+                  'value' => '24',
+                  'order_no' => 0,
+                  'group_no' => 0,
+               ),
+            ),
+         ),
+         'options' => array (
+            'position' => 'normal',
+            'layout' => 'default',
+            'hide_on_screen' => array (
+            ),
+         ),
+         'menu_order' => 0,
+      ));
+      register_field_group(array (
+         'id' => 'acf_sobre-nosotros',
+         'title' => 'sobre nosotros',
+         'fields' => array (
+            array (
+               'key' => 'field_592577cfd3eb9',
+               'label' => 'Imagen 1',
+               'name' => 'imagen_1',
+               'type' => 'image',
+               'instructions' => 'Sube una imágen',
+               'required' => 1,
+               'save_format' => 'id',
+               'preview_size' => 'thumbnail',
+               'library' => 'all',
+            ),
+            array (
+               'key' => 'field_5925783fd3ebc',
+               'label' => 'Descripcion',
+               'name' => 'descripcion_1',
+               'type' => 'wysiwyg',
+               'default_value' => '',
+               'toolbar' => 'full',
+               'media_upload' => 'yes',
+            ),
+            array (
+               'key' => 'field_592577fdd3ebb',
+               'label' => 'Imagen 2',
+               'name' => 'imagen_2',
+               'type' => 'image',
+               'instructions' => 'Sube una imágen',
+               'required' => 1,
+               'save_format' => 'id',
+               'preview_size' => 'thumbnail',
+               'library' => 'all',
+            ),
+            array (
+               'key' => 'field_59257851d3ebd',
+               'label' => 'Descripcion 2',
+               'name' => 'descripcion_2',
+               'type' => 'wysiwyg',
+               'default_value' => '',
+               'toolbar' => 'full',
+               'media_upload' => 'yes',
+            ),
+            array (
+               'key' => 'field_592577fcd3eba',
+               'label' => 'Imagen 3',
+               'name' => 'imagen_3',
+               'type' => 'image',
+               'instructions' => 'Sube una imágen',
+               'required' => 1,
+               'save_format' => 'id',
+               'preview_size' => 'thumbnail',
+               'library' => 'all',
+            ),
+            array (
+               'key' => 'field_5925785ad3ebe',
+               'label' => 'Descripcion 3',
+               'name' => 'descripcion_3',
+               'type' => 'wysiwyg',
+               'default_value' => '',
+               'toolbar' => 'full',
+               'media_upload' => 'yes',
+            ),
+         ),
+         'location' => array (
+            array (
+               array (
+                  'param' => 'page',
+                  'operator' => '==',
+                  'value' => '16',
+                  'order_no' => 0,
+                  'group_no' => 0,
+               ),
+            ),
+         ),
+         'options' => array (
+            'position' => 'normal',
+            'layout' => 'default',
+            'hide_on_screen' => array (
+            ),
+         ),
+         'menu_order' => 0,
+      ));
+   }
